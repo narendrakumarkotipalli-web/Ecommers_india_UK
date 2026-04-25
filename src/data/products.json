@@ -1,0 +1,314 @@
+[
+  {
+    "id": "1",
+    "name": "Sky Blue Floral Breeze",
+    "description": "Effortless floral shirt for everyday elegance.",
+    "detailedDescription": "Crafted from lightweight, breathable fabric, this sky blue shirt features delicate hand-painted floral motifs. Perfect for brunches or a casual day out.",
+    "category": "Floral Shirts",
+    "fabric": "Cotton",
+    "occasion": "Casual",
+    "images": [
+      "/images/shirt-1.png"
+    ],
+    "prices": {
+      "INR": 3200,
+      "GBP": 39,
+      "USD": 49
+    },
+    "originalPrices": {
+      "INR": 4500,
+      "GBP": 55,
+      "USD": 69
+    },
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      {
+        "name": "Sky Blue",
+        "hex": "#87CEEB"
+      }
+    ],
+    "features": [
+      "100% Cotton",
+      "Breathable Fabric",
+      "Feminine Cut"
+    ],
+    "isNew": true,
+    "isSpecialDeal": true,
+    "stock": 15
+  },
+  {
+    "id": "2",
+    "name": "Soft Vintage Floral",
+    "description": "Timeless vintage charm in soft hues.",
+    "detailedDescription": "A classic vintage-inspired shirt with a modern twist. The soft color palette ensures it pairs perfectly with almost anything in your wardrobe.",
+    "category": "Floral Shirts",
+    "fabric": "Linen",
+    "occasion": "Workwear",
+    "images": [
+      "/images/shirt-2.png"
+    ],
+    "prices": {
+      "INR": 2800,
+      "GBP": 29,
+      "USD": 36
+    },
+    "originalPrices": {
+      "INR": 3200,
+      "GBP": 33,
+      "USD": 41
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "name": "Vintage Cream",
+        "hex": "#F5F5DC"
+      }
+    ],
+    "features": [
+      "Vintage Print",
+      "Easy Returns",
+      "Eco-friendly"
+    ],
+    "stock": 10
+  },
+  {
+    "id": "3",
+    "name": "Peach Blossom Shirt",
+    "description": "Bright and cheerful peach blossoms.",
+    "detailedDescription": "Bring some sunshine to your day with our Peach Blossom shirt. Made from a soft rayon blend that feels like a second skin.",
+    "category": "Floral Shirts",
+    "fabric": "Rayon",
+    "occasion": "Brunch",
+    "images": [
+      "/images/shirt-3.png"
+    ],
+    "prices": {
+      "INR": 3000,
+      "GBP": 35,
+      "USD": 44
+    },
+    "originalPrices": {
+      "INR": 4000,
+      "GBP": 45,
+      "USD": 56
+    },
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      {
+        "name": "Peach Blossom",
+        "hex": "#FFDAB9"
+      }
+    ],
+    "features": [
+      "Soft Rayon",
+      "Machine Washable",
+      "Feminine Design"
+    ],
+    "isBestSeller": true,
+    "isSpecialDeal": true,
+    "stock": 5
+  },
+  {
+    "id": "4",
+    "name": "Pink Ditsy Floral Shirt",
+    "description": "Elegant ditsy print for a sophisticated look.",
+    "detailedDescription": "The Pink Ditsy Floral Shirt is all about subtle sophistication. Its small-scale floral print makes it versatile for both casual and semi-formal occasions.",
+    "category": "Floral Shirts",
+    "fabric": "Cotton",
+    "occasion": "Evening",
+    "images": [
+      "/images/shirt-4.png"
+    ],
+    "prices": {
+      "INR": 3200,
+      "GBP": 39,
+      "USD": 49
+    },
+    "originalPrices": {
+      "INR": 3800,
+      "GBP": 45,
+      "USD": 56
+    },
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "name": "Soft Pink",
+        "hex": "#FFB6C1"
+      }
+    ],
+    "features": [
+      "Ditsy Print",
+      "Premium Stitching",
+      "Fast Shipping"
+    ],
+    "stock": 20
+  },
+  {
+    "id": "5",
+    "name": "Lavender Dream Linen",
+    "description": "Breathable lavender linen with subtle florals.",
+    "detailedDescription": "Experience the luxury of pure linen mixed with dreamy lavender hues. This shirt is designed for maximum comfort in tropical climates.",
+    "category": "Linen Collection",
+    "fabric": "Linen",
+    "occasion": "Vacation",
+    "images": [
+      "/images/shirt-5.png"
+    ],
+    "prices": {
+      "INR": 4200,
+      "GBP": 49,
+      "USD": 61
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      {
+        "name": "Lavender",
+        "hex": "#E6E6FA"
+      }
+    ],
+    "features": [
+      "Pure Linen",
+      "Luxury Feel",
+      "Breathable"
+    ],
+    "isNew": true,
+    "stock": 8
+  },
+  {
+    "id": "6",
+    "name": "Midnight Silk Floral",
+    "description": "Dark navy silk blend for formal evenings.",
+    "detailedDescription": "A sophisticated midnight navy shirt with silver-grey floral motifs. The silk blend gives it a subtle sheen and premium drape.",
+    "category": "Silk Collection",
+    "fabric": "Silk Blend",
+    "occasion": "Evening",
+    "images": [
+      "/images/shirt-6.png"
+    ],
+    "prices": {
+      "INR": 5500,
+      "GBP": 65,
+      "USD": 81
+    },
+    "originalPrices": {
+      "INR": 7000,
+      "GBP": 85,
+      "USD": 106
+    },
+    "sizes": [
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "name": "Navy",
+        "hex": "#000080"
+      }
+    ],
+    "features": [
+      "Silk Blend",
+      "Premium Drip",
+      "Formal Look"
+    ],
+    "isBestSeller": true,
+    "stock": 12
+  },
+  {
+    "id": "7",
+    "name": "Sunflower Voile Shirt",
+    "description": "Sunny yellow prints on lightweight voile.",
+    "detailedDescription": "Brighten up your summer wardrobe with our Sunflower Voile shirt. The sheer fabric is incredibly light and perfect for beach days.",
+    "category": "Floral Shirts",
+    "fabric": "Cotton Voile",
+    "occasion": "Casual",
+    "images": [
+      "/images/shirt-1.png"
+    ],
+    "prices": {
+      "INR": 2500,
+      "GBP": 25,
+      "USD": 31
+    },
+    "sizes": [
+      "XS",
+      "S",
+      "M"
+    ],
+    "colors": [
+      {
+        "name": "Sunflower Yellow",
+        "hex": "#FFD700"
+      }
+    ],
+    "features": [
+      "Cotton Voile",
+      "Lightweight",
+      "Summer Essential"
+    ],
+    "stock": 18
+  },
+  {
+    "id": "8",
+    "name": "Emerald Garden Rayon",
+    "description": "Rich emerald green with exotic floral motifs.",
+    "detailedDescription": "Bold, beautiful, and vibrant. This emerald green shirt is a statement piece that brings the garden to your wardrobe.",
+    "category": "Floral Shirts",
+    "fabric": "Rayon",
+    "occasion": "Brunch",
+    "images": [
+      "/images/shirt-3.png"
+    ],
+    "prices": {
+      "INR": 3400,
+      "GBP": 39,
+      "USD": 49
+    },
+    "originalPrices": {
+      "INR": 4200,
+      "GBP": 49,
+      "USD": 61
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      {
+        "name": "Emerald Green",
+        "hex": "#50C878"
+      }
+    ],
+    "features": [
+      "No-wrinkles",
+      "Vibrant Hues",
+      "Modern Fit"
+    ],
+    "stock": 14
+  }
+]
