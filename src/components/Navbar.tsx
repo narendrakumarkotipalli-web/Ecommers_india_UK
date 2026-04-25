@@ -1,27 +1,28 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { ShoppingBag, Menu, X, Sun, Moon, MapPin, Palette } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { useTheme } from '../context/ThemeContext';
-import { useCart } from '../context/CartContext';
-import './Navbar.css';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { ShoppingBag, Menu, X, Sun, Moon, MapPin, Palette } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { useTheme } from "../context/ThemeContext";
+import { useCart } from "../context/CartContext";
+import "./Navbar.css";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
-  const { theme, accent, currency, toggleTheme, setAccent, setCurrency } = useTheme();
+  const { theme, accent, currency, toggleTheme, setAccent, setCurrency } =
+    useTheme();
   const { totalItems } = useCart();
 
-  const accentColors: { name: string; value: 'rose' | 'sage' | 'sky' }[] = [
-    { name: 'Rose', value: 'rose' },
-    { name: 'Sage', value: 'sage' },
-    { name: 'Sky', value: 'sky' },
+  const accentColors: { name: string; value: "rose" | "sage" | "sky" }[] = [
+    { name: "Rose", value: "rose" },
+    { name: "Sage", value: "sage" },
+    { name: "Sky", value: "sky" },
   ];
 
   const dropdownVariants = {
     hidden: { opacity: 0, y: -10, scale: 0.95 },
     visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.2 } },
-    exit: { opacity: 0, y: -10, scale: 0.95, transition: { duration: 0.2 } }
+    exit: { opacity: 0, y: -10, scale: 0.95, transition: { duration: 0.2 } },
   };
 
   return (
@@ -32,22 +33,30 @@ const Navbar: React.FC = () => {
         </button>
 
         <Link to="/kavya-clothing" className="navbar-logo">
-          KARYA <span>CLOTHING</span>
+          KAVYA <span>CLOTHING</span>
         </Link>
 
         {/* Desktop Links */}
-        <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-          <Link to="/kavya-clothing" onClick={() => setIsMenuOpen(false)}>Home</Link>
-          <Link to="/kavya-clothing/shop" onClick={() => setIsMenuOpen(false)}>Shop Collection</Link>
-          <Link to="/kavya-clothing/about" onClick={() => setIsMenuOpen(false)}>Our Story</Link>
-          <Link to="/kavya-clothing/admin" onClick={() => setIsMenuOpen(false)}>Admin</Link>
+        <div className={`nav-links ${isMenuOpen ? "active" : ""}`}>
+          <Link to="/kavya-clothing" onClick={() => setIsMenuOpen(false)}>
+            Home
+          </Link>
+          <Link to="/kavya-clothing/shop" onClick={() => setIsMenuOpen(false)}>
+            Shop Collection
+          </Link>
+          <Link to="/kavya-clothing/about" onClick={() => setIsMenuOpen(false)}>
+            Our Story
+          </Link>
+          <Link to="/kavya-clothing/admin" onClick={() => setIsMenuOpen(false)}>
+            Admin
+          </Link>
         </div>
 
         <div className="nav-actions">
           {/* Region Dropdown */}
-          <div 
+          <div
             className="region-selector"
-            onMouseEnter={() => setActiveDropdown('region')}
+            onMouseEnter={() => setActiveDropdown("region")}
             onMouseLeave={() => setActiveDropdown(null)}
           >
             <button className="icon-btn" title="Switch Region">
@@ -55,33 +64,33 @@ const Navbar: React.FC = () => {
               <span>{currency}</span>
             </button>
             <AnimatePresence>
-              {activeDropdown === 'region' && (
-                <motion.div 
+              {activeDropdown === "region" && (
+                <motion.div
                   className="dropdown"
                   initial="hidden"
                   animate="visible"
                   exit="exit"
                   variants={dropdownVariants}
                 >
-                  <button onClick={() => setCurrency('INR')}>India (₹)</button>
-                  <button onClick={() => setCurrency('GBP')}>UK (£)</button>
+                  <button onClick={() => setCurrency("INR")}>India (₹)</button>
+                  <button onClick={() => setCurrency("GBP")}>UK (£)</button>
                 </motion.div>
               )}
             </AnimatePresence>
           </div>
 
           {/* Accent Dropdown */}
-          <div 
+          <div
             className="accent-selector"
-            onMouseEnter={() => setActiveDropdown('accent')}
+            onMouseEnter={() => setActiveDropdown("accent")}
             onMouseLeave={() => setActiveDropdown(null)}
           >
             <button className="icon-btn" title="Switch Accent">
               <Palette size={20} />
             </button>
             <AnimatePresence>
-              {activeDropdown === 'accent' && (
-                <motion.div 
+              {activeDropdown === "accent" && (
+                <motion.div
                   className="dropdown accent-dropdown"
                   initial="hidden"
                   animate="visible"
@@ -89,10 +98,10 @@ const Navbar: React.FC = () => {
                   variants={dropdownVariants}
                 >
                   {accentColors.map((color) => (
-                    <button 
-                      key={color.value} 
+                    <button
+                      key={color.value}
                       onClick={() => setAccent(color.value)}
-                      className={accent === color.value ? 'active' : ''}
+                      className={accent === color.value ? "active" : ""}
                     >
                       <span className={`color-dot ${color.value}`}></span>
                       {color.name}
@@ -104,8 +113,12 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Theme Toggle */}
-          <button className="icon-btn" onClick={toggleTheme} title="Toggle Theme">
-            {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
+          <button
+            className="icon-btn"
+            onClick={toggleTheme}
+            title="Toggle Theme"
+          >
+            {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
           </button>
 
           {/* Cart Icon */}
@@ -113,7 +126,7 @@ const Navbar: React.FC = () => {
             <ShoppingBag size={20} />
             <AnimatePresence>
               {totalItems > 0 && (
-                <motion.span 
+                <motion.span
                   key="cart-badge"
                   className="cart-count"
                   initial={{ scale: 0 }}
