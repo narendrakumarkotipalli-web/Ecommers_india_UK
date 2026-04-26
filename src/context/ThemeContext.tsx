@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 import { Currency } from '../types/product';
 
 type Theme = 'light' | 'dark';
-type Accent = 'rose' | 'sage' | 'sky';
+type Accent = 'rose' | 'sage' | 'sky' | 'lavender' | 'peach' | 'mint' | 'amber' | 'indigo';
 
 interface ThemeContextType {
   theme: Theme;

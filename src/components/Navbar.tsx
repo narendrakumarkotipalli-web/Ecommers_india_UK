@@ -13,10 +13,15 @@ const Navbar: React.FC = () => {
     useTheme();
   const { totalItems } = useCart();
 
-  const accentColors: { name: string; value: "rose" | "sage" | "sky" }[] = [
+  const accentColors: { name: string; value: "rose" | "sage" | "sky" | "lavender" | "peach" | "mint" | "amber" | "indigo" }[] = [
     { name: "Rose", value: "rose" },
     { name: "Sage", value: "sage" },
     { name: "Sky", value: "sky" },
+    { name: "Lavender", value: "lavender" },
+    { name: "Peach", value: "peach" },
+    { name: "Mint", value: "mint" },
+    { name: "Amber", value: "amber" },
+    { name: "Indigo", value: "indigo" },
   ];
 
   const dropdownVariants = {
@@ -32,22 +37,22 @@ const Navbar: React.FC = () => {
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
-        <Link to="/kavya-clothing" className="navbar-logo">
-          KAVYA <span>CLOTHING</span>
+        <Link to="/karya-clothing" className="navbar-logo">
+          KARYA <span>CLOTHING</span>
         </Link>
 
         {/* Desktop Links */}
         <div className={`nav-links ${isMenuOpen ? "active" : ""}`}>
-          <Link to="/kavya-clothing" onClick={() => setIsMenuOpen(false)}>
+          <Link to="/karya-clothing" onClick={() => setIsMenuOpen(false)}>
             Home
           </Link>
-          <Link to="/kavya-clothing/shop" onClick={() => setIsMenuOpen(false)}>
+          <Link to="/karya-clothing/shop" onClick={() => setIsMenuOpen(false)}>
             Shop Collection
           </Link>
-          <Link to="/kavya-clothing/about" onClick={() => setIsMenuOpen(false)}>
+          <Link to="/karya-clothing/about" onClick={() => setIsMenuOpen(false)}>
             Our Story
           </Link>
-          <Link to="/kavya-clothing/admin" onClick={() => setIsMenuOpen(false)}>
+          <Link to="/karya-clothing/admin" onClick={() => setIsMenuOpen(false)}>
             Admin
           </Link>
         </div>
@@ -122,7 +127,7 @@ const Navbar: React.FC = () => {
           </button>
 
           {/* Cart Icon */}
-          <Link to="/kavya-clothing/cart" className="icon-btn cart-btn">
+          <Link to="/karya-clothing/cart" className="icon-btn cart-btn">
             <ShoppingBag size={20} />
             <AnimatePresence>
               {totalItems > 0 && (

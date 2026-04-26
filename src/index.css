@@ -3,6 +3,11 @@
   --accent-rose: #f48fb1;
   --accent-sage: #81c784;
   --accent-sky: #4fc3f7;
+  --accent-lavender: #b39ddb;
+  --accent-peach: #ffab91;
+  --accent-mint: #80cbc4;
+  --accent-amber: #ffca28;
+  --accent-indigo: #9fa8da;
   
   --accent-primary: var(--accent-rose);
   --accent-secondary: #f06292;
@@ -32,6 +37,11 @@
 [data-accent='rose'] { --accent-primary: #f48fb1; --accent-secondary: #f06292; }
 [data-accent='sage'] { --accent-primary: #81c784; --accent-secondary: #66bb6a; }
 [data-accent='sky'] { --accent-primary: #4fc3f7; --accent-secondary: #29b6f6; }
+[data-accent='lavender'] { --accent-primary: #b39ddb; --accent-secondary: #9575cd; }
+[data-accent='peach'] { --accent-primary: #ffab91; --accent-secondary: #ff8a65; }
+[data-accent='mint'] { --accent-primary: #80cbc4; --accent-secondary: #4db6ac; }
+[data-accent='amber'] { --accent-primary: #ffca28; --accent-secondary: #ffb300; }
+[data-accent='indigo'] { --accent-primary: #9fa8da; --accent-secondary: #7986cb; }
 
 * {
   margin: 0;

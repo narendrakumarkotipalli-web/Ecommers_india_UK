@@ -40,7 +40,7 @@ const About: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            The Heart of <span>Kavya</span>
+            The Heart of <span>Karya</span>
           </motion.h1>
           <p>Redefining women's casuals with a touch of botanical grace.</p>
         </div>
@@ -58,7 +58,7 @@ const About: React.FC = () => {
             >
               <h2>Our Journey</h2>
               <p>
-                Founded in 2024, Kavya Clothing emerged from a simple desire: to
+                Founded in 2024, Karya Clothing emerged from a simple desire: to
                 make high-quality, floral-print casual wear accessible to the
                 modern woman. We noticed a gap in the market for shirts that
                 were breathable enough for a busy day outdoors but elegant
@@ -116,12 +116,12 @@ const About: React.FC = () => {
       <section className="section join-us">
         <div className="container">
           <div className="join-box">
-            <h2>Experience the Kavya Feel</h2>
+            <h2>Experience the Karya Feel</h2>
             <p>
-              Join thousands of women who have made Kavya a part of their daily
+              Join thousands of women who have made Karya a part of their daily
               life. Explore our latest collection today.
             </p>
-            <a href="/kavya-clothing/shop" className="btn btn-primary lg">
+            <a href="/karya-clothing/shop" className="btn btn-primary lg">
               Explore Collection
             </a>
           </div>

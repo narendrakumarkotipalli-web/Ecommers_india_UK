@@ -50,7 +50,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           initial={{ opacity: 0 }}
           whileHover={{ opacity: 1 }}
         >
-          <Link to={`/kavya-clothing/product/${product.id}`} className="overlay-btn">
+          <Link to={`/karya-clothing/product/${product.id}`} className="overlay-btn">
             <Eye size={20} />
             Quick View
           </Link>

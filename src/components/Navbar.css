@@ -145,6 +145,11 @@
 .color-dot.rose { background-color: #f48fb1; }
 .color-dot.sage { background-color: #81c784; }
 .color-dot.sky { background-color: #4fc3f7; }
+.color-dot.lavender { background-color: #b39ddb; }
+.color-dot.peach { background-color: #ffab91; }
+.color-dot.mint { background-color: #80cbc4; }
+.color-dot.amber { background-color: #ffca28; }
+.color-dot.indigo { background-color: #9fa8da; }
 
 /* Mobile */
 @media (max-width: 768px) {

@@ -36,9 +36,9 @@ const AppContent: React.FC = () => {
           transition={pageTransition}
         >
           <Routes location={location} key={location.pathname}>
-            <Route path="/" element={<Navigate to="/kavya-clothing" replace />} />
+            <Route path="/" element={<Navigate to="/karya-clothing" replace />} />
 
-            <Route path="/kavya-clothing/*">
+            <Route path="/karya-clothing/*">
               <Route index element={<Home />} />
               <Route path="shop" element={<Shop />} />
               <Route path="product/:id" element={<ProductDetail />} />
@@ -48,12 +48,11 @@ const AppContent: React.FC = () => {
               <Route path="admin" element={<AdminLogin onLogin={() => setIsLoggedAdmin(true)} />} />
               <Route
                 path="admin/dashboard"
-                element={isLoggedAdmin ? <Admin /> : <Navigate to="/kavya-clothing/admin" replace />}
-              />
+                element={isLoggedAdmin ? <Admin /> : <Navigate to="/karya-clothing/admin" replace />} />
             </Route>
 
-            {/* Fallback to root or kavya-clothing */}
-            <Route path="*" element={<Navigate to="/kavya-clothing" replace />} />
+            {/* Fallback to root or karya-clothing */}
+            <Route path="*" element={<Navigate to="/karya-clothing" replace />} />
           </Routes>
         </motion.div>
       </AnimatePresence>
@@ -62,18 +61,18 @@ const AppContent: React.FC = () => {
           <div className="container">
             <div className="footer-grid">
               <div className="footer-brand">
-                <h2>KAVYA <span>CLOTHING</span></h2>
+                <h2>KARYA <span>CLOTHING</span></h2>
                 <p>Timeless floral shirts for modern elegance.</p>
               </div>
               <div className="footer-links">
                 <h4>Shop</h4>
-                <a href="/kavya-clothing/shop">New Arrivals</a>
-                <a href="/kavya-clothing/shop">Best Sellers</a>
-                <a href="/kavya-clothing/shop">All Products</a>
+                <a href="/karya-clothing/shop">New Arrivals</a>
+                <a href="/karya-clothing/shop">Best Sellers</a>
+                <a href="/karya-clothing/shop">All Products</a>
               </div>
               <div className="footer-links">
                 <h4>Support</h4>
-                <a href="/kavya-clothing/about">Our Story</a>
+                <a href="/karya-clothing/about">Our Story</a>
                 <a href="#">Shipping Policy</a>
                 <a href="#">Returns & Exchanges</a>
               </div>
@@ -87,7 +86,7 @@ const AppContent: React.FC = () => {
               </div>
             </div>
             <div className="footer-bottom">
-              <p>&copy; 2026 Kavya Clothing. All rights reserved.</p>
+              <p>&copy; 2026 Karya Clothing. All rights reserved.</p>
             </div>
           </div>
         </footer>

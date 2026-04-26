@@ -11,18 +11,18 @@ const AdminLogin: React.FC<{ onLogin: () => void }> = ({ onLogin }) => {
   const navigate = useNavigate();
 
   const handleAutoFill = () => {
-    setEmail("admin@Kavyaclothing.com");
-    setPassword("Kavya_admin_2026");
+    setEmail("admin@Karyaclothing.com");
+    setPassword("Karya_admin_2026");
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (
-      email === "admin@Kavyaclothing.com" &&
-      password === "Kavya_admin_2026"
+      email === "admin@Karyaclothing.com" &&
+      password === "Karya_admin_2026"
     ) {
       onLogin();
-      navigate("/kavya-clothing/admin/dashboard");
+      navigate("/karya-clothing/admin/dashboard");
     } else {
       alert("Invalid credentials. Hint: Use Auto-fill.");
     }
@@ -33,7 +33,7 @@ const AdminLogin: React.FC<{ onLogin: () => void }> = ({ onLogin }) => {
       <div className="login-card">
         <div className="login-header">
           <h2>
-            Kavya <span>ADMIN</span>
+            KARYA <span>ADMIN</span>
           </h2>
           <p>Access your collection management dashboard</p>
         </div>

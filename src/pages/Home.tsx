@@ -55,10 +55,10 @@ const Home: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            <Link to="/kavya-clothing/shop" className="btn btn-primary">
+            <Link to="/karya-clothing/shop" className="btn btn-primary">
               Shop New Arrivals
             </Link>
-            <Link to="/kavya-clothing/shop" className="btn btn-outline">
+            <Link to="/karya-clothing/shop" className="btn btn-outline">
               Explore Collection
             </Link>
           </motion.div>
@@ -95,7 +95,7 @@ const Home: React.FC = () => {
             ))}
           </motion.div>
           <motion.div className="section-footer" variants={fadeInUp}>
-            <Link to="/kavya-clothing/shop" className="btn btn-primary lg">
+            <Link to="/karya-clothing/shop" className="btn btn-primary lg">
               Shop All Collection
             </Link>
           </motion.div>
@@ -124,7 +124,7 @@ const Home: React.FC = () => {
             >
               <h2>Our Story</h2>
               <p>
-                Kavya Clothing was born from an obsession with the perfect
+                Karya Clothing was born from an obsession with the perfect
                 floral print. We believe that everyday wear should feel like a
                 celebration of femininity and comfort. What started as a small
                 kitchen-table project in 2024 has blossomed into a international
@@ -135,7 +135,7 @@ const Home: React.FC = () => {
                 breathable fabrics and timeless silhouettes that empower women
                 to feel their best, wherever they are.
               </p>
-              <Link to="/kavya-clothing/about" className="learn-more">
+              <Link to="/karya-clothing/about" className="learn-more">
                 Learn More <ArrowRight size={18} />
               </Link>
             </motion.div>
@@ -153,7 +153,7 @@ const Home: React.FC = () => {
       >
         <div className="container">
           <motion.div className="section-header" variants={fadeInUp}>
-            <h2>Why Choose Kavya</h2>
+            <h2>Why Choose Karya</h2>
           </motion.div>
           <div className="features-grid">
             <motion.div

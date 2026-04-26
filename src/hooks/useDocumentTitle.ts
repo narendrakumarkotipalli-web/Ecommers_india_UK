@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const useDocumentTitle = (title: string, suffix: string = "Kavya Clothing") => {
+const useDocumentTitle = (title: string, suffix: string = "Karya Clothing") => {
   useEffect(() => {
     document.title = `${title} | ${suffix}`;
 
